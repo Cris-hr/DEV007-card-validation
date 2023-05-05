@@ -1,0 +1,106 @@
+
+
+
+html {
+background-color: white
+}
+    
+  h1 {
+    font-family: serif;
+    color: white;
+    background-color: rgb(89, 47, 143);
+       
+  }  
+
+  #card-number {
+    top: 250px;                    /*(arriba/abajo) para subir o bajar el numero que contiene la img.tarjeta*/
+    right: 100px;                 /* mover a la derecha el numero de la tarjeta para tratar que quede centrada*/
+    position: absolute;
+    color: white;               /*el color que le doy al las letras del nombre y numero de la tarjeta*/
+    left: 100px;                  /*mover a la izquierda el numero de la tarjeta para que quede centrada*/
+    letter-spacing: 7px;          /* sirve para darle espacio a los digtos del numero de tarjeta*/
+    font-size: 180%;              /*para darle el tamaño al numero de la tarjeta que esta dentr de la img.tarjeta*/
+    
+  }
+
+   #card-name {
+    top: 310px;
+    right: 270px;
+    position: absolute;
+    color: white;
+    left: 50px;
+    font-size: 150%;     
+  } 
+
+  .fecha {                   /*llamo a la clase fecha que contiene el mes y año que va dentro de la img.tarjeta*/
+    top: 315px;              /*(arriba/abajo)para subir o bajar el mes y año que esta dentro de la img.tarjeta*/
+    right: 100px;
+    position: absolute;
+    color: white;
+    left: 415px;
+    font-size: 150%;
+    
+  }
+
+  .input {                     /*llamo a todos los inputs que tienen como nombre class=input*/
+    border-radius: 7px;        /* darle el ovalado a las esquinas del borde del input*/
+    font-size: 18px;            /*para darle un tamaño al input*/
+    background-color: white;  /*para darle un color de fondo al input*/
+    color: rgb(68, 65, 65);             /*color de texto del placeholder del input*/
+    font-family: Arial, Helvetica, sans-serif;       /* tipo de letra del placeholder*/
+    border-color: rgb(136, 121, 121);           /*color a todo el borde*/
+    padding: 0.20%;                             /*para darletamaño al,input solo hacia abajo*/
+    padding-left: 5%;                           /* para darle tamaño al input pero de ancho*/
+  }
+
+  #ingresa {             /*llamo al parrafo(p) del encabezado por su "id"*/
+    font-size: 150%;
+    color: rgb(88, 78, 78)
+  }
+
+ 
+body {                                        /*llamo a la etiqueta body*/
+    background-image: url(imagenes/fondo25.png);
+    background-repeat:no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    background-size: 100%;
+    text-align: center;                       /*alinear todo el texto al centro*/
+    
+}
+
+.card {                       /*llamo a la imagen por su clase "card"*/
+    display: flex;
+    justify-content: center;   /* para centrar la imagen de la tarjeta*/
+    
+}
+
+.label {
+  text-transform: uppercase;    /*para transformar la letra de minuscula a mayuscula*/
+  font-size: 17px;              /*para darle el tamaño a la letra*/
+  letter-spacing: 1.5px;        /*para darle espacio entre letra y letra*/
+  color: rgb(25, 46, 46) ;    /*color a las letras*/
+  font-family:'Times New Roman', Times, serif;  /*tipo de letra*/
+}
+
+.bott {
+  font-size: 18px;                      /* tamaño del boton*/
+  background-color: rgb(56, 4, 124);  /*color de fondo del boton*/
+  color: white;                       /*color de la letra*/
+  border-radius: 5px;                   /* para darle el ovalado del borde de las esquinas del boton*/
+  border-color: white;                /*color de todo el borde*/ 
+  letter-spacing: 5px;                  /*espacio entre letras*/
+  padding-block: 0.25%;                 /* tamaño(jala hacia abajo del boton)*/
+  cursor:pointer;                       /*se pone en una manito el cursor cuando te ubicas en el boton para darle click*/
+}
+
+
+input::-webkit-outer-spin-button,  /*para quitarle las flechitas de arriba y abajo al input number*/
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin:0;
+}
+
+input[type=number] {                /* para quitarle las flechitas de arriba y abajo al input number*/
+    -moz-appearence:textfield;
+}
