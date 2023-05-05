@@ -5,10 +5,62 @@
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <header></header>
-    <main></main>
+<body>
+  <header>
+   <h1>Bienvenid@ a tu tienda online</h1> 
+   <p id="ingresa">Ingresa tus datos para continuar con tu compra! </p>
+  </header>
+ <main>
+  <div class="card">
+   <div>
+    <img src="./imagenes/bg-card-front.png" alt="tarjeta frontal">
+     <div>
+      <p id="card-number">0000 0000 0000 0000</p>
+      <div>
+       <p id="card-name">xxxxxxxxxxxxx</p>
+       <div class="fecha">
+       <p>
+       <span id="card-month">00</span>/<span id="card-year">00</span>
+       </p>
+      </div>
+      </div>
+     </div>
+   </div>         
+  </div>
+    
+  <section class="form">
+    <div>
+      <label for="input-name" class="label">Nombre</label><br>
+      <input type="texto" id="input-name" class="input" placeholder="e.g. Rosa Guadalupe">
+    </div>
+    
+    <div>
+      <label for="input-number" class="label">Numero de tarjeta</label><br>
+      <input type="number" id="input-number" class="input" placeholder="e.g.1234 5678 9123 0000" min="0" max="9" onkeypress="if (this.value.length > 15) return false;">  
+    </div>
+
+    <div>
+     <div>
+      <label for="input-month" class="label">F/Exp. Mes(MM)</label><br>
+      <input type="number" id="input-month" class="input" placeholder="MM" onkeypress="if (this.value.length > 1) return false;">
+      <div>
+      <label for="input-year" class="label">Año (YY)</label><br>
+      <input type="number" id="input-year" class="input" placeholder="YY" onkeypress="if (this.value.length > 3) return false;">    
+      <div>
+      <label for="input-cvc" class="label">cvc</label><br>
+      <input type="password" id="input-cvc" class="input" placeholder="e.g.123" onkeypress="if (this.value.length > 2) return false;">
+      </div>
+      </div>
+     </div>
+    </div>
+    
+    <div>
+     <button type="submit" class="bott" id="boton">VALIDAR</button> 
+    </div>
+  </section>
+ </main>
+  
     <footer></footer>
     <script src="index.js" type="module"></script>
-  </body>
+</body>
 </html>
